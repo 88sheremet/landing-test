@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu-container">
+        <nav class="menu">
+          <a href="" class="menu__logo">
+            <svg class="menu__icon" width="37" height="37">
+              <use href="./img/sprite.svg#icon-logo"></use>
+            </svg>
+            <div class="menu__container">
+              Dashboard <span class="menu__version">v.01</span>
+            </div>
+          </a>
+          <ul class="menu-list">
+            <li class="menu-list__item">
+              <a href="" class="menu-list__link">
+                <svg class="menu-list__icon" width="24" height="24">
+                  <use href="./img/sprite.svg#icon-key-square"></use>
+                </svg>
+                <p class="menu-list__description">Dashboard</p>
+              </a>
+            </li>
+            <li class="menu-list__item">
+              <a href="" class="menu-list__link">
+                <div class="menu-list__icon-container">
+                  <svg class="menu-list__icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-d-square"></use>
+                  </svg>
+                </div>
+
+                <p class="menu-list__description">Product</p>
+                <div class="menu-list__arrow-container">
+                  <svg class="menu-arrow-icon" width="16" height="16">
+                    <use href="./img/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="menu-list__item current">
+              <a href="" class="menu-list__link">
+                <div class="menu-list__icon-container">
+                  <svg class="menu-list__icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-user-square-1"></use>
+                  </svg>
+                </div>
+                <p class="menu-list__description active">Customers</p>
+                <div class="menu-list__arrow-container">
+                  <svg class="menu-arrow-icon-current" width="16" height="16">
+                    <use
+                      href="./img/sprite.svg#icon-chevron-right-current"
+                    ></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="menu-list__item">
+              <a href="" class="menu-list__link">
+                <div class="menu-list__icon-container">
+                  <svg class="menu-list__icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-wallet-money"></use>
+                  </svg>
+                </div>
+                <p class="menu-list__description">Income</p>
+                <div class="menu-list__arrow-container">
+                  <svg class="menu-arrow-icon" width="16" height="16">
+                    <use href="./img/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="menu-list__item">
+              <a href="" class="menu-list__link">
+                <div class="menu-list__icon-container">
+                  <svg class="menu-list__icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-discount-shape"></use>
+                  </svg>
+                </div>
+                <p class="menu-list__description">Promote</p>
+                <div class="menu-list__arrow-container">
+                  <svg class="menu-arrow-icon" width="16" height="16">
+                    <use href="./img/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="menu-list__item">
+              <a href="" class="menu-list__link">
+                <div class="menu-list__icon-container">
+                  <svg class="menu-list__icon" width="24" height="24">
+                    <use href="./img/sprite.svg#icon-message-question"></use>
+                  </svg>
+                </div>
+                <p class="menu-list__description">Help</p>
+                <div class="menu-list__arrow-container">
+                  <svg class="menu-arrow-icon" width="16" height="16">
+                    <use href="./img/sprite.svg#icon-chevron-right"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="user">
+            <a href="" class="user__link">
+              <img
+                src="./img/user-photo-evano.jpg"
+                alt="user photo"
+                width="42"
+                height="42"
+              />
+            </a>
+            <div class="user__description">
+              <h3 class="user__name">Evano</h3>
+              <p class="user__profession">Project Manager</p>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <section class="main-info">
+        <h2 class="main-info__greeting-title">Hello Evano 👋🏼,</h2>
+        <div class="main-content">
+          <div class="main-content__header-container">
+            <div class="main-content__title-container">
+              <h3 class="main-content___title">All Customers</h3>
+              <p class="main-content__members">Active Members</p>
+            </div>
+
+            <span class="input-container">
+              <input
+                name="user_name"
+                type="text"
+                class="form-input"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+                placeholder="Search"
+              />
+              <svg class="input-image" width="24" height="24">
+                <use href="./img/sprite.svg#icon-search"></use>
+              </svg>
+            </span>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th class="company">Company</th>
+                <th class="phone">Phone Number</th>
+                <th class="email">Email</th>
+                <th class="country">Country</th>
+                <th class="status">Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Jane Cooper</td>
+                <td class="company-name">Microsoft</td>
+                <td class="phone-number">(225) 555-0118</td>
+                <td class="email-company">jane@microsoft.com</td>
+                <td class="country-name">United States</td>
+                <td class="active-box">
+                  <span class="activ-status">Active</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Floyd Miles</td>
+                <td class="company-name">Yahoo</td>
+                <td class="phone-number">(205) 555-0100</td>
+                <td class="email-company">floyd@yahoo.com</td>
+                <td class="country-name">Kiribati</td>
+                <td class="inactive-box">
+                  <span class="inactiv-status">Inactive</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Ronald Richards</td>
+                <td class="company-name">Adobe</td>
+                <td class="phone-number">(302) 555-0107</td>
+                <td class="email-company">ronald@adobe.com</td>
+                <td class="country-name">Israel</td>
+                <td class="inactive-box">
+                  <span class="inactiv-status">Inactive</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Marvin McKinney</td>
+                <td class="company-name">Tesla</td>
+                <td class="phone-number">(252) 555-0126</td>
+                <td class="email-company">marvin@tesla.com</td>
+                <td class="country-name">Iran</td>
+                <td class="active-box">
+                  <span class="activ-status">Active</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Jerome Bell</td>
+                <td class="company-name">Google</td>
+                <td class="phone-number">(629) 555-0129</td>
+                <td class="email-company">jerome@google.com</td>
+                <td class="country-name">Réunion</td>
+                <td class="active-box">
+                  <span class="activ-status">Active</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Kathryn Murphy</td>
+                <td class="company-name">Microsoft</td>
+                <td class="phone-number">(406) 555-0120</td>
+                <td class="email-company">kathryn@microsoft.com</td>
+                <td class="country-name">Curaçao</td>
+                <td class="active-box">
+                  <span class="activ-status">Active</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Jacob Jones</td>
+                <td class="company-name">Yahoo</td>
+                <td class="phone-number">(208) 555-0112</td>
+                <td class="email-company">jacob@yahoo.com</td>
+                <td class="country-name">Brazil</td>
+                <td class="active-box">
+                  <span class="activ-status">Active</span>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Kristin Watson</td>
+                <td class="company-name">Facebook</td>
+                <td class="phone-number">(704) 555-0127</td>
+                <td class="email-company">kristin@facebook.com</td>
+                <td class="country-name">Åland Islands</td>
+                <td class="inactive-box">
+                  <div class="inactiv-status">Inactive</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="description">
+            <p class="description__text">Showing data 1 to 8 of 256K entries</p>
+            <div class="description__links">
+              <span class="link-button">
+                <a href="">
+                  <svg class="" width="8" height="8">
+                    <use href="./img/sprite.svg#icon-right"></use>
+                  </svg>
+                </a>
+              </span>
+              <span class="link-button current-page"><a href="">1</a></span>
+              <span class="link-button"><a href="">2</a></span>
+              <span class="link-button"><a href="">3</a></span>
+              <span class="link-button"><a href="">4</a></span>
+              <span class="link-button points"><a href="">...</a></span>
+              <span class="link-button"><a href="">40</a></span>
+              <span class="link-button">
+                <a href="">
+                  <svg class="" width="8" height="8">
+                    <use href="./img/sprite.svg#icon-left"></use>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
