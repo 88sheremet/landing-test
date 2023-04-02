@@ -1,15 +1,6 @@
 .the_walchen_lake_wrapper {
-  // height: 820px;
-  // background-image: linear-gradient(to top, rgba(40, 39, 42, 1) 0%, rgba(40, 39, 42, 0) 100%), url("../../img/walchen_lake.jpg");
-  /* background-image: url('./img/dirk-von-loen-wagner-Hrmayke-v8g-unsplash.jpg'); */
-  // background-size: 1440px 820px;
-  // background-repeat: no-repeat;
   display: flex;
 }
-
-// .nav-list{
-//   padding: 170px 0 0 60px;
-// }
 
 aside {
   width: 270px;
@@ -22,18 +13,18 @@ aside {
   font-size: 20px;
 }
 
- .main_nav ul {
-   padding: 80px 0 0 60px;
- } 
+.main_nav ul {
+  padding: 80px 0 0 60px;
+}
 
 .main_nav ul li:not(:first-child) a {
   color: rgba(113, 115, 116, 1);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .main_nav ul li:not(:first-child) a:hover {
   color: #fff;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .main_nav ul li:not(:first-child) {
@@ -41,7 +32,7 @@ aside {
 }
 
 .main_nav ul li:after {
-  content: '';
+  content: "";
   width: 100px;
   height: 2px;
   background: #fff;
@@ -105,7 +96,7 @@ aside {
   font-weight: 800;
   line-height: 12;
   color: #000 !important;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .button:hover {
@@ -127,7 +118,8 @@ aside {
   line-height: 0;
 }
 
-.slide_name, .slide_num {
+.slide_name,
+.slide_num {
   color: #fff;
   font-weight: 600;
 }
@@ -138,7 +130,7 @@ aside {
   height: 1px;
 }
 
-.line_long{
+.line_long {
   width: 580px;
 }
 

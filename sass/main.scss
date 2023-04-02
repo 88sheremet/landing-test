@@ -1,6 +1,4 @@
-
-
-@import "./components/section";
+@import "./base/base";
 
 @import "./layout/header";
 
@@ -20,4 +18,6 @@
 
 @import "./layout/footer";
 
-@import "./base/base";
+@import "./layout/adaptive";
+
+

@@ -35,7 +35,8 @@
   font-weight: 600;
 }
 
-.view_all, .view_all_line {
+.view_all,
+.view_all_line {
   margin-top: 125px;
 }
 
@@ -80,4 +81,12 @@
 
 .featured_line {
   width: 670px;
+}
+
+.read-more-link {
+  color: #f1de84;
+}
+
+.read-more-link:hover {
+  color: rgb(255, 213, 0);
 }
